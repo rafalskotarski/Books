@@ -1,0 +1,21 @@
+{
+  "name": "Books",
+  "version": "1.0.0",
+  "description": "Simple books library API",
+  "main": "index.js",
+  "repository": "git@github.com:rafalskotarski/Books.git",
+  "author": "rafalskotarski <rafal.skotarski@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^20.4.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "start": "yarn build && node build/index.js",
+    "start:dev": "yarn nodemon",
+    "build": "rimraf ./build && tsc"
+  }
+}
